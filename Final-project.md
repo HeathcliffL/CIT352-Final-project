@@ -45,6 +45,17 @@ npm install express
 
 To start up Node.js and PostgreSQL on system startup, you must do the following:
 
+### Start up PostgreSQL on system startup
+
+```
+systemctl enable postgresql
+```
+![image](https://user-images.githubusercontent.com/49813952/207471849-e424e9d6-dacc-4766-8b9c-3d9b821f3ef9.png)
+
+
+
+### Start up Node.js on system startup
+
 ```
 npm install pm2 -g
 ```
@@ -60,6 +71,11 @@ pm2 save
 ```
 ![image](https://user-images.githubusercontent.com/49813952/207397897-606d5e39-ed3a-4e55-be82-7ebcc03feca2.png)
 
+system monitoring:
+```
+pm2 monit
+```
+![image](https://user-images.githubusercontent.com/49813952/207472227-4e9b9f9f-70a7-4984-83d7-95de7f1d13f3.png)
 
 
 ## Video link for this porject
